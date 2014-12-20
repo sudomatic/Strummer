@@ -1,12 +1,28 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+            android:id="@+id/stopButton"
+            android:text="Stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <CheckBox
+            android:id="@+id/loopCheckBox"
+            android:text="Loop the music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <ListView
+            android:id="@+id/mainListView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#c0c0c0" >
+
+    </ListView>
+
+</LinearLayout>
